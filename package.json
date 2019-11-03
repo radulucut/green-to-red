@@ -1,0 +1,29 @@
+{
+  "name": "green-to-red",
+  "version": "1.0.0",
+  "description": "Get a color from a green to red scale",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radulucut/green-to-red.git"
+  },
+  "keywords": [
+    "green",
+    "red",
+    "green-to-red",
+    "color",
+    "scale"
+  ],
+  "author": "Radu Lucut",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radulucut/green-to-red/issues"
+  },
+  "homepage": "https://github.com/radulucut/green-to-red#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}

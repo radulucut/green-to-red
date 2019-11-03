@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body,
+        #main {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <span></span>
+        <button style="display:none;">Reload</button>
+    </div>
+    <script src="../index.js"></script>
+    <script type="module">
+        const main = document.getElementById('main');
+        const reload = main.children[1];
+
+        reload.addEventListener('click', function () {
+            greenToRedDemo(main, reload)
+        });
+
+        function greenToRedDemo(main, reload) {
+            let percentage = 0;
+            reload.style.display = 'none';
+
+            const interval = setInterval(function () {
+                main.style.backgroundColor = greenToRed(percentage, true);
+                main.children[0].innerHTML = percentage + '%';
+                percentage++;
+                if (percentage > 100) {
+                    clearInterval(interval);
+                    reload.style.display = 'block';
+                }
+            }, 100)
+        }
+
+        greenToRedDemo(main, reload); 
+    </script>
+</body>
+
+</html>
