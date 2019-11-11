@@ -1,6 +1,8 @@
 # green-to-red
 Get a color from a green to red scale
 
+![green-To-red](./demo/green-to-red.png)
+
 ## Usage
 ```javascript
 greenToRed(0)  // Output -> [0, 255, 0]
