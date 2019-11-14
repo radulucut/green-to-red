@@ -1,4 +1,5 @@
 # green-to-red
+![](https://github.com/radulucut/green-to-red/workflows/Node%20CI/badge.svg)
 [![npm](https://img.shields.io/npm/v/green-to-red)](https://www.npmjs.com/package/green-to-red)
 [![npm](https://img.shields.io/npm/dt/green-to-red)](https://www.npmjs.com/package/green-to-red)
 [![GitHub](https://img.shields.io/github/license/radulucut/green-to-red)](https://github.com/radulucut/green-to-red/blob/master/LICENSE)
