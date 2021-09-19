@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/radulucut/green-to-red#readme",
   "devDependencies": {
-    "jest": "^26.6.3"
+    "jest": "^27.2.0"
   }
 }
