@@ -1,6 +1,6 @@
 {
   "name": "green-to-red",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Get a color from a green to red scale",
   "main": "index.js",
   "files": [
