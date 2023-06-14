@@ -1,12 +1,20 @@
 const GTR_MAX_VALUE = 255;
 const GTR_FORMULA = 2 / 100 * GTR_MAX_VALUE;
 
-/**
+/** 
+ * Returns a color between green and red, based on the percentage value.
  * 
- * @param {number} percentage 
- * @param {boolean} toHEX 
+ * @param {number} percentage  - a number between 0 and 100
+ * @param {boolean} [toHEX] - if true, returns a HEX color, otherwise returns a RGB color
+ * @returns {(Uint8Array|string)} - a RGB color or a HEX color
+ * 
+ * @example
+ * const greenToRed = require('green-to-red');
+ * greenToRed(0);          // Output -> [0, 255, 0]
+ * greenToRed(20, true);   // Output -> #32ff00
+ * greenToRed(100, true);  // Output -> #ff0000
  */
-const greenToRed = function(percentage, toHEX) {
+function greenToRed(percentage, toHEX) {
     percentage = percentage > 100 ? 100 : percentage < 0 ? 0 : percentage;
 
     const green = percentage <= 50 ? GTR_MAX_VALUE : GTR_MAX_VALUE - (percentage - 50) * GTR_FORMULA;
