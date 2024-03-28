@@ -1,6 +1,6 @@
 {
-  "name": "green-to-red",
-  "version": "1.0.6",
+  "name": "@radulucut/green-to-red",
+  "version": "1.0.7",
   "description": "Get a color from a green to red scale",
   "main": "index.js",
   "files": [
@@ -21,7 +21,7 @@
     "color",
     "scale"
   ],
-  "author": "Radu Lucut",
+  "author": "Radu Lucuț",
   "license": "MIT",
   "types": "./index.d.ts",
   "bugs": {
@@ -29,6 +29,6 @@
   },
   "homepage": "https://github.com/radulucut/green-to-red#readme",
   "devDependencies": {
-    "jest": "^29.5.0"
+    "jest": "^29.7.0"
   }
 }
