@@ -1,4 +1,4 @@
-declare module "green-to-red" {
+declare module "@radulucut/green-to-red" {
   /**
    * Returns a color between green and red, based on the percentage value.
    *
@@ -7,7 +7,7 @@ declare module "green-to-red" {
    * @returns {(Uint8Array|string)} - a RGB color or a HEX color
    *
    * @example
-   * const greenToRed = require('green-to-red');
+   * const greenToRed = require('@radulucut/green-to-red');
    * greenToRed(0);          // Output -> [0, 255, 0]
    * greenToRed(20, true);   // Output -> #32ff00
    * greenToRed(100, true);  // Output -> #ff0000

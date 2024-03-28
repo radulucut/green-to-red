@@ -9,7 +9,7 @@ const GTR_FORMULA = 2 / 100 * GTR_MAX_VALUE;
  * @returns {(Uint8Array|string)} - a RGB color or a HEX color
  * 
  * @example
- * const greenToRed = require('green-to-red');
+ * const greenToRed = require('@radulucut/green-to-red');
  * greenToRed(0);          // Output -> [0, 255, 0]
  * greenToRed(20, true);   // Output -> #32ff00
  * greenToRed(100, true);  // Output -> #ff0000
