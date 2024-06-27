@@ -1,63 +1,65 @@
 const greenToRed = require('../index');
+const { describe, it } = require('node:test')
+const assert = require('node:assert')
 
 describe('greenToRed', () => {
-    test('0% should return RGB', () => {
+    it('0% should return RGB', () => {
         const res = greenToRed(0);
 
-        expect(res.length).toBe(3);
-        expect(res[0]).toBe(0);
-        expect(res[1]).toBe(255);
-        expect(res[2]).toBe(0);
+        assert.strictEqual(res.length, 3);
+        assert.strictEqual(res[0], 0);
+        assert.strictEqual(res[1], 255);
+        assert.strictEqual(res[2], 0);
     });
 
-    test('10% should return HEX', () => {
+    it('10% should return HEX', () => {
         const res = greenToRed(10, true);
 
-        expect(res).toEqual('#32ff00');
+        assert.strictEqual(res, '#32ff00');
     });
 
-    test('20% should return RGB', () => {
+    it('20% should return RGB', () => {
         const res = greenToRed(20);
 
-        expect(res.length).toBe(3);
-        expect(res[0]).toBe(101);
-        expect(res[1]).toBe(255);
-        expect(res[2]).toBe(0);
+        assert.strictEqual(res.length, 3);
+        assert.strictEqual(res[0], 101);
+        assert.strictEqual(res[1], 255);
+        assert.strictEqual(res[2], 0);
     });
 
-    test('30% should return HEX', () => {
+    it('30% should return HEX', () => {
         const res = greenToRed(30, true);
 
-        expect(res).toEqual('#99ff00');
+        assert.strictEqual(res, '#99ff00');
     });
 
-    test('50% should return RGB', () => {
+    it('50% should return RGB', () => {
         const res = greenToRed(50);
 
-        expect(res.length).toBe(3);
-        expect(res[0]).toBe(255);
-        expect(res[1]).toBe(255);
-        expect(res[2]).toBe(0);
+        assert.strictEqual(res.length, 3);
+        assert.strictEqual(res[0], 255);
+        assert.strictEqual(res[1], 255);
+        assert.strictEqual(res[2], 0);
     });
 
-    test('70% should return HEX', () => {
+    it('70% should return HEX', () => {
         const res = greenToRed(70, true);
 
-        expect(res).toEqual('#ff9900');
+        assert.strictEqual(res, '#ff9900');
     });
 
-    test('90% should return RGB', () => {
+    it('90% should return RGB', () => {
         const res = greenToRed(90);
 
-        expect(res.length).toBe(3);
-        expect(res[0]).toBe(255);
-        expect(res[1]).toBe(50);
-        expect(res[2]).toBe(0);
+        assert.strictEqual(res.length, 3);
+        assert.strictEqual(res[0], 255);
+        assert.strictEqual(res[1], 50);
+        assert.strictEqual(res[2], 0);
     });
 
-    test('100% should return HEX', () => {
+    it('100% should return HEX', () => {
         const res = greenToRed(100, true);
 
-        expect(res).toEqual('#ff0000');
+        assert.strictEqual(res, '#ff0000');
     });
 })
