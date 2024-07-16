@@ -34,5 +34,7 @@ function greenToRed(percentage, toHEX) {
     return rgb;
 }
 
-module.exports = greenToRed;
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = greenToRed;
+}
 

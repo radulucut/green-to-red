@@ -1,6 +1,6 @@
 {
   "name": "@radulucut/green-to-red",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Get a color from a green to red scale",
   "main": "index.js",
   "files": [
